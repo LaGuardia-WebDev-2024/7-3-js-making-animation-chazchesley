@@ -4,8 +4,13 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var sunSize = 30; 
-
+var sunSize = 200; 
+//ladybug
+var x = 20;
+var y =10;
+//the sun;
+var xsun=200;
+var ysun=250;
 
 //🟢Draw Function - Runs on Repeat
 draw = function(){
@@ -14,9 +19,9 @@ draw = function(){
   // the beautiful blue sky
   background(82, 222, 240);
     
-  // The sun, a little circle on the horizon
+  // The sun
   fill(255, 204, 0);
-  ellipse(200, 298, sunSize, sunSize);
+  ellipse(x, y, sunSize, sunSize);
 
   // The land, blocking half of the sun
   fill(76, 168, 67);
@@ -24,8 +29,16 @@ draw = function(){
   
   //ladybug
   fill(200,0,0);
-  ellipse(10, 350, 10, 10);
+  ellipse(x+10, y+320, 10, 10);
+  
+  x=x+10;
+  y=y+1;
+  
+  xsun=xsun-100;
+ysun=ysun-1;
+  
 }
+
 
 
 //🟡Extra FUN Features Ms. Hall Added
